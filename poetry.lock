@@ -578,6 +578,21 @@ python-versions = ">=3.7"
 plugins = ["importlib-metadata"]
 
 [[package]]
+name = "pypdf"
+version = "3.16.1"
+description = "A pure-python PDF library capable of splitting, merging, cropping, and transforming PDF files"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.extras]
+crypto = ["PyCryptodome", "cryptography"]
+dev = ["black", "flit", "pip-tools", "pre-commit (<2.18.0)", "pytest-cov", "pytest-socket", "pytest-timeout", "wheel"]
+docs = ["myst_parser", "sphinx", "sphinx_rtd_theme"]
+full = ["Pillow (>=8.0.0)", "PyCryptodome", "cryptography"]
+image = ["Pillow (>=8.0.0)"]
+
+[[package]]
 name = "python-dateutil"
 version = "2.8.2"
 description = "Extensions to the standard Python datetime module"
@@ -900,7 +915,7 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.11,<3.13"
-content-hash = "db4e3eed2175b348446e60abd5b35498c3a5421f7474b1b0a695c8c1602ab74b"
+content-hash = "122dfc1540445fc501d1db5aa008d134a7cf2cce5ccfe676de4c37de29a122f2"
 
 [metadata.files]
 aiohttp = [
@@ -1697,6 +1712,10 @@ pydeck = [
 pygments = [
     {file = "Pygments-2.16.1-py3-none-any.whl", hash = "sha256:13fc09fa63bc8d8671a6d247e1eb303c4b343eaee81d861f3404db2935653692"},
     {file = "Pygments-2.16.1.tar.gz", hash = "sha256:1daff0494820c69bc8941e407aa20f577374ee88364ee10a98fdbe0aece96e29"},
+]
+pypdf = [
+    {file = "pypdf-3.16.1-py3-none-any.whl", hash = "sha256:7fc9eac57162c1c4651ffae1ae96dee911d8e75af66e83b2453b2a553a8814cc"},
+    {file = "pypdf-3.16.1.tar.gz", hash = "sha256:aff9540e6c5ec135d6e80943db74257523639325162d00c903ee1e2be84351fc"},
 ]
 python-dateutil = [
     {file = "python-dateutil-2.8.2.tar.gz", hash = "sha256:0123cacc1627ae19ddf3c27a5de5bd67ee4586fbdd6440d9748f8abb483d3e86"},

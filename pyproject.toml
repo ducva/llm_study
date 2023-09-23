@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "llm-study"
+version = "0.1.0"
+description = ""
+authors = ["Michael <vuanhduc2685@gmail.com>"]
+readme = "README.md"
+packages = [{include = "llm_study"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+streamlit = "^1.27.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
